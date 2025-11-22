@@ -10,3 +10,13 @@ const veicle = [
     {marca: 'Mercedes', modello: 'EQA', alimentazione: 'Elettrico',},
     {marca: 'Seat', modello: 'Ibiza', alimentazione: 'Diesel',},
 ]
+console.log(veicle)
+
+const benzina = veicle.filter(type => type.alimentazione === 'Benzina')
+console.log('Veicoli a Benzina', benzina)
+
+const diesel = veicle.filter(type => type.alimentazione === 'Diesel')
+console.log('Veicoli a Diesel', diesel)
+
+const other = veicle.filter(type => type.alimentazione !== 'Diesel' && type.alimentazione !== 'Benzina')
+console.log('Veicoli ad altri tipi di alimentazione', other)
