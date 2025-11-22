@@ -8,5 +8,6 @@ const animals = [
     {nome: 'Pinguino', famiglia: 'Sfeniscidi', classe: 'Uccelli' },
 ]
 
-const mammals = animals.filter(animal => animal.classe === 'Mammiferi');
+// const mammals = animals.filter(animal => animal.classe === 'Mammiferi');
+const mammals = animals.filter(animal => animal.classe.toLowerCase() === 'Mammiferi'.toLowerCase());
 console.log(mammals)
